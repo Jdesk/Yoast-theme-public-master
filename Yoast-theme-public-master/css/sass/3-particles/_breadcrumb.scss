@@ -1,0 +1,42 @@
+.breadcrumb {
+  @media only screen and (max-width: $page-width-medium) {
+    display: none;
+  }
+
+  i.fa {
+    margin: 0 3px;
+  }
+
+  margin-bottom: 1rem;
+
+  a {
+    text-decoration: none;
+  }
+  span {
+    color: $color-grey-text;
+  }
+
+  .theme-academy & {
+    &, a, .sep {
+      color: $scheme-academy-primary;
+    }
+  }
+
+  .theme-software & {
+    &, a, .sep {
+      color: $scheme-software-primary;
+    }
+  }
+
+  .theme-review & {
+    &, a, .sep {
+      color: $scheme-review-primary;
+    }
+  }
+
+  .theme-about & {
+    &, a, .sep {
+      color: $scheme-about-primary;
+    }
+  }
+}

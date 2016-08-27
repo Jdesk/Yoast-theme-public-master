@@ -1,0 +1,13 @@
+.banner {
+	height: 80px;
+	background-position: center center;
+	background-size: cover;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	margin-bottom: $spacing;
+
+	&--academy {
+		background-image: url(./../images/banner-academy-small.jpg);
+		border-color: $scheme-academy-secondary;
+	}
+}

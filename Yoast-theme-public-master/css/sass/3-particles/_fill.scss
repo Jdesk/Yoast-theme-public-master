@@ -1,0 +1,139 @@
+// A background color based on the theme it is in.
+//
+// .fill              	 - This class automatically inherits its color from the theme it is in
+// .fill.theme-academy   - The background color for an Academy element
+// .fill.theme-software  - The background color for a Software element
+// .fill.theme-review    - The background color for a Review element
+// .fill.theme-about     - The background color for an About element
+// .theme-academy .fill  - The background color for an element in Academy
+// .theme-software .fill - The background color for an element in Software
+// .theme-review .fill   - The background color for an element in Review
+// .theme-about .fill    - The background color for an element in About
+//
+// Styleguide 0.0.1
+
+@mixin fill($color-primary, $color-secondary, $color-tertiary, $transparency) {
+	& {
+		background-color: $color-primary;
+		color: $color-white;
+		border-color: $color-secondary;
+		&::after {
+			border-top-color: $color-primary;
+		}
+
+		&.announcement--pointer {
+			&::after {
+				@include vendor(filter, drop-shadow(0 1px 0 $color-secondary));
+			}
+		}
+
+		&.announcement--pointer-top {
+			&::before {
+				@include vendor(filter, drop-shadow(0 1px 0 $color-secondary));
+			}
+		}
+	}
+
+	&.fill--secondary {
+		background-color: $color-secondary;
+		border-color: $color-tertiary;
+
+		&::after {
+			border-top-color: $color-secondary;
+		}
+
+		&.announcement--pointer {
+			&::after {
+				@include vendor(filter, drop-shadow(0 1px 0 $color-tertiary));
+			}
+		}
+
+		&.announcement--pointer-top {
+			&::before {
+				@include vendor(filter, drop-shadow(0 1px 0 $color-tertiary));
+			}
+		}
+	}
+
+	&.fill--tertiary {
+		background-color: $color-tertiary;
+		border-color: $color-primary;
+
+		&::after {
+			border-top-color: $color-tertiary;
+		}
+
+		&.announcement--pointer {
+			&::after {
+				@include vendor(filter, drop-shadow(0 1px 0 $color-primary));
+			}
+		}
+
+		&.announcement--pointer-top {
+			&::before {
+				@include vendor(filter, drop-shadow(0 1px 0 $color-primary));
+			}
+		}
+	}
+
+	&.fill--transparent {
+		background-color: rgba($color-primary, $transparency);
+		border-color: $color-white;
+		&::after {
+			border-top-color: rgba($color-primary, $transparency);
+		}
+	}
+
+
+}
+
+
+.fill {
+	p, .p {
+		color: $color-white;
+		//text-shadow: $text-shadow;
+	}
+	
+	.theme-academy & {
+		@include fill($scheme-academy-primary, $scheme-academy-secondary, $scheme-academy-tertiary, .7);
+	}
+
+	.theme-software & {
+		@include fill($scheme-software-primary, $scheme-software-secondary, $scheme-software-tertiary, .7);
+	}
+
+	.theme-review & {
+		@include fill($scheme-review-primary, $scheme-review-secondary, $scheme-review-tertiary, .7);
+	}
+
+	.theme-about & {
+		@include fill($scheme-about-primary, $scheme-about-secondary, $scheme-about-tertiary, .7);
+	}
+
+	.theme-home & {
+		@include fill($scheme-home-primary, $scheme-home-secondary, $scheme-home-tertiary, .5);
+	}
+
+	/* Explicit theming */ 
+
+	&.theme-academy {
+		@include fill($scheme-academy-primary, $scheme-academy-secondary, $scheme-academy-tertiary, .7);
+	}
+
+	&.theme-software {
+		@include fill($scheme-software-primary, $scheme-software-secondary, $scheme-software-tertiary, .7);
+	}
+
+	&.theme-review {
+		@include fill($scheme-review-primary, $scheme-review-secondary, $scheme-review-tertiary, .7);
+	}
+
+	&.theme-about {
+		@include fill($scheme-about-primary, $scheme-about-secondary, $scheme-about-tertiary, .7);
+	}
+
+	&.theme-home {
+		@include fill($scheme-home-primary, $scheme-home-secondary, $scheme-home-tertiary, .5);
+	}
+
+}

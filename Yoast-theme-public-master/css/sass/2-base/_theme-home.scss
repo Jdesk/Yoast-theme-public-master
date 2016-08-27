@@ -1,0 +1,7 @@
+.widget.theme-home {
+  @include headers($scheme-home-primary, $scheme-home-secondary);
+}
+
+.theme-home {
+  @include theme($scheme-home-primary, $scheme-home-secondary, $scheme-home-tertiary, $scheme-home-menu-primary, $scheme-home-menu-secondary);
+}

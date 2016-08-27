@@ -1,0 +1,5 @@
+.takeout {
+	position: absolute; 
+	width: 100%; 
+	@include vendor(transform, translateY(-99%));
+}

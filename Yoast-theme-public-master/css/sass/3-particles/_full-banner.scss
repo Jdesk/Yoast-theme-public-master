@@ -1,0 +1,80 @@
+.full-banner {
+	position: relative;
+	z-index: -1;
+	width: 100%;
+	min-height: 20rem;
+	height: 20rem;
+	background-color: rgb(239, 176, 165);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin: auto;
+		width: 100%;
+		max-width: none;
+		height: 100%;
+	}
+
+	.announcement {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+
+	&--home {
+		position: fixed;
+		top: 0;
+		left: 0;
+
+		@media only screen and (max-width: $page-width-medium) {
+			top: 4em;
+			//display: none;
+		}
+
+		background: rgb(239, 176, 165) url(./../images/banners/home-small.jpg) no-repeat 50% 50% / cover;
+
+		@media only screen and (min-width: 500px) {
+			background-image: url(./../images/banners/home.jpg);
+		}
+
+		@media only screen and (min-width: $page-width-full) {
+			background-image: url(./../images/banners/home-large.jpg);
+			top: 0;
+			left: 0;
+		}
+	}
+
+	// Allow us to add banners in a dry way, just name the images correctly and add one line of SASS
+	@mixin banner( $name ) {
+		$image:  "./../images/banners/#{$name}";
+		$small:  "#{$image}-small.jpg";
+		$medium: "#{$image}.jpg";
+		$large:  "#{$image}-large.jpg";
+
+		background-image: url($small);
+
+		@media only screen and (min-width: 500px) {
+			background-image: url($medium);
+		}
+
+		@media only screen and (min-width: $page-width-full) {
+			background-image: url($large);
+		}
+	}
+
+	&.academy {
+		@include banner( 'academy' );
+	}
+
+	&.reviews {
+		@include banner( 'reviews' );
+	}
+
+	&.software {
+		@include banner( 'software' );
+	}
+}

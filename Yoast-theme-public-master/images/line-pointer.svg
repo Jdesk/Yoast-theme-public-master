@@ -1,0 +1,37 @@
+<svg width="300" height="21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <style type="text/css" >
+      .arrow {
+        display: none;
+      }
+
+      .arrow:target {
+        display: inline;
+      }
+
+      .green {
+        stroke: rgb(0, 146, 136);
+        fill: transparent;
+      }
+
+      .orange {
+        stroke: rgb(238, 113, 0);
+        fill: transparent;
+      }
+
+    </style>
+  </defs>
+
+  <svg viewBox="0 0 300 21">
+    <g id="green" class="arrow">
+      <polygon class="green" points="-20,-1  150,20  320,-1" />
+    </g>
+  </svg>
+
+  <svg viewBox="0 0 300 21">
+    <g id="orange" class="arrow">
+      <polygon class="orange" points="-20,-1  150,20  320,-1" />
+    </g>
+  </svg>
+
+</svg>

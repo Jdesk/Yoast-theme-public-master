@@ -1,0 +1,141 @@
+<svg width="1020" height="40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <style type="text/css" >
+      .arrow {
+        display: none;
+      }
+
+      .arrow:target {
+        display: inline;
+      }
+
+      .default {
+        stroke: #EE7100;
+        fill: #EE7100;
+      }
+
+      .default:hover {
+        fill: rgb(245, 130, 27);
+      }
+
+      .outline {
+        stroke: #5D237A;
+        fill: transparent;
+      }
+
+      .academy {
+        fill: #A4286A;
+        stroke: #5D237A;
+      }
+
+      .academy-outline {
+        fill: transparent;
+        stroke: #A4286A;
+      }
+
+      .software {
+        fill: #009288;
+        stroke: #0075B3;
+      }
+
+      .software-outline {
+        fill: transparent;
+        stroke: #009288;
+      }
+
+      .review {
+        fill: #009288;
+        stroke: #77B227;
+      }
+
+      .review-outline {
+        fill: transparent;
+        stroke: #009288;
+      }
+
+      .about {
+        fill: #A4286A;
+        stroke: #D93F69;
+      }
+
+      .about-outline {
+        fill: transparent;
+        stroke: #A4286A;
+      }
+
+      .dimmed {
+        stroke: #DCDCDC;
+        fill: #DCDCDC;
+      }
+
+    </style>
+  </defs>
+
+  <svg viewBox="0 0 1020 40">
+    <g id="outline" class="arrow">
+      <polygon class="outline" points="0,0  1000,0  1020,20  1000,40  0,40" />
+    </g>
+  </svg>
+
+  <svg viewBox="0 0 1020 40">
+    <g id="default" class="arrow">
+      <polygon class="default" points="0,0  1000,0  1020,20  1000,40  0,40" />
+    </g>
+  </svg>
+
+  <svg viewBox="0 0 1020 40">
+    <g id="academy" class="arrow">
+      <polygon class="academy" points="0,0  1000,0  1020,20  1000,40  0,40" />
+    </g>
+  </svg>
+
+  <svg viewBox="0 0 1020 40">
+    <g id="software" class="arrow">
+      <polygon class="software" points="0,0  1000,0  1020,20  1000,40  0,40" />
+    </g>
+  </svg>
+
+  <svg viewBox="0 0 1020 40">
+    <g id="review" class="arrow">
+      <polygon class="review" points="0,0  1000,0  1020,20  1000,40  0,40" />
+    </g>
+  </svg>
+
+  <svg viewBox="0 0 1020 40">
+    <g id="about" class="arrow">
+      <polygon class="about" points="0,0  1000,0  1020,20  1000,40  0,40" />
+    </g>
+  </svg>
+
+
+  <svg viewBox="0 0 1020 40">
+    <g id="academy-outline" class="arrow">
+      <polygon class="academy-outline" points="0,0  1000,0  1020,20  1000,40  0,40" />
+    </g>
+  </svg>
+
+  <svg viewBox="0 0 1020 40">
+    <g id="software-outline" class="arrow">
+      <polygon class="software-outline" points="0,0  1000,0  1020,20  1000,40  0,40" />
+    </g>
+  </svg>
+
+  <svg viewBox="0 0 1020 40">
+    <g id="review-outline" class="arrow">
+      <polygon class="review-outline" points="0,0  1000,0  1020,20  1000,40  0,40" />
+    </g>
+  </svg>
+
+  <svg viewBox="0 0 1020 40">
+    <g id="about-outline" class="arrow">
+      <polygon class="about-outline" points="0,0  1000,0  1020,20  1000,40  0,40" />
+    </g>
+  </svg>
+
+  <svg viewBox="0 0 1020 40">
+    <g id="dimmed" class="arrow">
+      <polygon class="dimmed" points="0,0  1000,0  1020,20  1000,40  0,40" />
+    </g>
+  </svg>
+
+</svg>

@@ -1,0 +1,85 @@
+.social.promoblock {
+  //margin-bottom: $spacing;
+  margin-top: $spacing-half;
+  position: relative;
+  z-index: 2;
+  border-color: #fff;
+  padding: 10px;
+
+  span, a {
+    vertical-align: middle;
+  }
+
+  @media only screen and (max-width: $page-width-small) {
+    span {
+      display: block;
+    }
+  }
+
+  a {
+    display: inline-block;
+    position: relative;
+    margin-left: $spacing-quarter;
+  }
+
+  a.fa {
+    font-size: 48px;
+    text-decoration: none;
+  }
+
+  a.fa.fa-facebook-square {
+    color: #3B5998;
+  }
+
+  a.fa.fa-twitter-square {
+    color: #55ACEE;
+  }
+
+  a.fa.fa-linkedin-square {
+    color: #0077b5;
+  }
+
+  a.fa.fa-instagram {
+    color: #3f729b;
+  }
+
+  a.fa.fa-pinterest-square {
+    color: #BD081C;
+  }
+
+  a.fa.fa-youtube-square {
+    color: #e52d27;
+  }
+
+  a span:first-child {
+    display: none;
+  }
+
+  a span:nth-child(n+1) {
+    position: absolute;
+    bottom: -5px;
+    right: -7px;
+    z-index: 1;
+    padding: 0 .4em;
+    font-size: 10px;
+    line-height: 1.2;
+    color: $color-black;
+    border: 1px solid $color-black;
+    border-radius: 12px;
+    border-bottom-right-radius: 0;
+    background: $color-white;
+  }
+
+  .page-template-software & {
+    margin: 0;
+  }
+}
+
+.social-top {
+  text-align: right;
+  margin-top: -1.5em;
+  margin-bottom: -1.4em;
+  @media only screen and (max-width: $page-width-medium) {
+    display: none;
+  }
+}

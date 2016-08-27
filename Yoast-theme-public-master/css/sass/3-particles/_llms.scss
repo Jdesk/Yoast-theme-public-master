@@ -1,0 +1,257 @@
+.lifterlms {
+  @include clearfix;
+}
+
+.llms-lesson-button-wrapper {
+  @extend .island;
+
+  input[type="submit"] {
+    width: 100%;
+    color: $color-white;
+  }
+}
+
+.llms-button-wrapper {
+  input[type="submit"], input[type="button"] {
+    color: $color-white;
+  }
+}
+
+#llms-quiz-question-wrapper .button {
+  color: $color-white;
+}
+
+.llms-button {
+  @extend .button, .default;
+  border-radius: 0;
+
+  &:hover {
+    background: $color-orange;
+  }
+}
+
+.llms-lesson-preview .llms-lesson-complete {
+  i {
+    color: green;
+  }
+}
+
+.llms-purchase-link-wrapper {
+  text-align: left;
+}
+
+.llms-course-navigation {
+  .button {
+    width: 100%;
+  }
+
+  .next-lesson {
+    margin-left: 0;
+  }
+
+  .previous-lesson {
+    margin-left: 1.36rem;
+  }
+}
+
+svg .llms-animated-circle {
+  stroke: $color-green;
+}
+
+.view-summary {
+  cursor: pointer;
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+}
+
+.quiz-summary {
+  .panel {
+    cursor: pointer;
+  }
+
+  .collapsed {
+    .panel-title {
+      &::after {
+        content: '\f0d7';
+        font-family: 'FontAwesome';
+        float: right;
+      }
+    }
+  }
+
+  .panel-body {
+    img {
+      display: block;
+    }
+
+    li {
+      margin-top: $spacing;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    a {
+      font-size: 1em;
+    }
+
+  }
+}
+
+.llms-return {
+  a {
+    @extend .button, .left, .dimmed;
+
+    .single-llms_quiz & {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.single-llms_quiz {
+  main > article {
+    min-height: 500px;
+  }
+
+  .llms-course-navigation {
+    margin-top: 1em;
+    padding-top: 0;
+  }
+}
+
+#quiz-start-button {
+  text-align: left;
+  margin-top: 1em;
+}
+
+.llms-quiz-results {
+  h3 {
+    @extend .h2;
+    background: none;
+  }
+}
+
+.llms-quiz-result-details {
+
+  .llms-content-block {
+    font-size: 1.2em;
+    padding-top: 1.5em;
+  }
+
+
+  // Only display the first item.
+  ul {
+    display: none;
+    &:first-child {
+      display: block;
+    }
+  }
+
+  h4,
+  h5,
+  h6,
+  a {
+    font-size: 1rem;
+    font-family: $font-stack-article;
+    color: $color-black;
+  }
+}
+
+.llms-progress-circle-count {
+  top: 25%;
+  width: 91%;
+}
+
+.lifterlms {
+  .course-link {
+    text-align: right;
+  }
+
+  .llms-my-achievements,
+  .llms-my-certificates {
+    display: none;
+  }
+}
+
+.llms-question-wrapper {
+  .llms-option_ {
+    margin: 0.6rem 0 0 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .llms-question-label {
+    padding-left: 30px;
+    text-indent: -23px;
+
+    input[type="radio"] {
+      margin: 0 5px 0 0;
+    }
+  }
+}
+
+.llms-syllabus-wrapper {
+  .llms-lesson-counter {
+    display: none;
+  }
+}
+
+// Hide certain things if they are in the content.
+.content {
+  .llms-course-navigation,
+  .llms-parent-course-link,
+  .llms-purchase-link-wrapper,
+  .llms-return {
+    display: none;
+  }
+}
+
+#llms_prev_question {
+  @extend .dimmed;
+}
+
+.llms-progress .progress-bar-complete {
+  background-color: $color-pink-light;
+}
+
+.yoast_academy .extra {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 115px;
+}
+
+.sticky-filled .extra + div {
+  display: none !important;
+}
+
+@media only screen and (min-width: $page-width-medium) {
+  .llms-person-login {
+    float: left;
+    width: 50%;
+    padding-right: $spacing-half;
+
+    p {
+      margin-bottom: 1em;
+    }
+  }
+
+  .llms-new-person-form-wrapper {
+    float: right;
+    width: 50%;
+    padding-left: $spacing-half;
+  }
+}
+
+@media only screen and (min-width: 50rem) {
+  .yoast_academy .pagetitle {
+    width: 30em;
+    background-image: url(./../images/logo-academy.svg);
+  }
+}

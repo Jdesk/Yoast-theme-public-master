@@ -1,0 +1,49 @@
+// for a normal quote use the element blockquote
+blockquote {
+	color: $color-grey-quote;
+	position: relative;
+	display: inline-block;
+	font-size: 1.1em;
+	line-height: 1.8rem;
+	font-family: $font-stack-article;
+	font-style: italic;
+	font-weight: 300;
+	letter-spacing: 0;
+	padding: 0 2.5rem;
+	margin: 0;
+	width: 100%;
+
+	cite {
+		display: block;
+		font-style: normal;
+	}
+
+	&.large {
+		font-size: 1.88em;
+		line-height: 2.5rem;
+	}
+}
+
+// when you have a testimonial with an image, use the media object in combination with the blockquote and cite
+.testimonial {
+	.media img {
+		margin-top: 0.625rem;
+		@media only screen and (max-width: $page-width-medium) {
+			margin-left: 4.5rem;
+		}
+	}
+	blockquote {
+		font-size: 1em;
+		line-height: 2.1rem;
+		&::before, &::after {
+			font-size: 11.5em;
+		}
+		&::before {
+			top: 4.3rem;
+		}
+		&::after {
+			bottom: -0.1rem;
+			top: auto;
+		}
+	}
+}

@@ -1,0 +1,91 @@
+body {
+	background-color: #fff;
+	background-image: none;
+}
+.header {
+	display: none;
+}
+#content {
+	background: none;
+}
+.entry {
+	margin-bottom: 40px !important;
+	padding: 50px 60px !important;
+	background: none;
+}
+.hentry {
+	margin-bottom: 40px !important;
+	padding: 50px 60px !important;
+	background: none;
+}
+.site-header {
+	display: none;
+}
+.nav-primary {
+	display: none;
+}
+.llms-certificate-container {
+	background-repeat: no-repeat;
+	background-size: 1024px 724px;
+	width: 1024px;
+	height: 724px;
+	margin: 20px auto;
+	-webkit-print-color-adjust: exact;
+	overflow: hidden;
+}
+.llms-certificate-container h1:first-child {
+	text-align: center;
+}
+#llms-print-certificate {
+	text-align: right;
+}
+
+.contents {
+	width: 640px;
+	margin: 280px auto 0 auto;
+
+	img {
+		border-radius: 30px 30px 0 30px;
+		float: left;
+		width: 150px;
+		height: 150px;
+		margin-right: 20px;
+	}
+
+	.name,
+	.date {
+		font-family: "Times";
+		line-height: normal;
+		letter-spacing: 0;
+	}
+
+	.name {
+		font-size: 55px;
+	}
+
+	.date {
+		font-size: 25px;
+	}
+}
+
+.certificate-cta {
+	text-align: right;
+}
+
+.certificate-badge {
+  margin-top: 30px;
+}
+
+.badge-preview {
+  margin-right: 50px;
+}
+
+@media print {
+	.no-print, .no-print * {
+		display: none !important;
+	}
+
+	@page {
+		size: landscape
+	}
+}

@@ -1,0 +1,27 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content, .extra {
+  img {
+    border: 1px solid $color-grey-cta;
+    margin: 1em 0 0;
+    max-width: 100%;
+
+    &.noborder {
+      border: 0;
+    }
+  }
+
+  .alignright {
+    float: right;
+    margin: 0.5rem 0 0.5rem 1rem;
+  }
+
+  .alignleft {
+    float: left;
+    margin: 0.5rem 1rem 0.5rem 0;
+  }
+
+}

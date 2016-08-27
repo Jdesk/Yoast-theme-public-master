@@ -1,0 +1,135 @@
+body {
+  font-family: $font-stack-default;
+  font-size: $font-size-default;
+  line-height: $line-height-default;
+  letter-spacing: 0.01em;
+  color: $color-black;
+  background-color: $color-white;
+}
+
+article, .article {
+  font-family: $font-stack-article;
+}
+
+.content p, .content ul {
+  font-family: $font-stack-article;
+
+  &.readmore {
+    font-size: 1.1em;
+  }
+}
+
+.content ul {
+  ul {
+    margin-bottom: 0;
+  }
+
+  li {
+    list-style-type: square;
+    list-style-position: outside;
+    margin-left: 1.5em;
+    ul li {
+      margin-left: 2.5em;
+
+      ul li {
+        margin-left: 3.5em;
+      }
+    }
+  }
+}
+
+p, .p {
+  margin-top: 0;
+  margin-bottom: 1.88rem;
+
+  .meta & {
+    color: $color-grey-text;
+    margin-bottom: 0;
+  }
+  .intro & {
+    font-family: $font-stack-default;
+  }
+  .extra & {
+    font-size: 0.94em;
+    color: $color-grey-text
+  }
+  .extra.show-off & {
+    font-size: 1.4em;
+    line-height: 1.5em;
+    color: $color-pink;
+    font-family: $font-stack-default;
+    span {
+      font-family: $font-stack-article;
+      font-weight: bold;
+      font-style: italic;
+    }
+  }
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 1.88rem;
+}
+
+.p {
+  font-size: $font-size-default;
+  line-height: $line-height-default;
+  letter-spacing: 0.01em;
+}
+
+.small {
+  font-size: 0.88em;
+}
+
+.text-dimmed {
+  color: $color-grey-text;
+}
+
+.rightaligned {
+  width: 100%;
+  display: block;
+  text-align: right;
+  text-decoration: none;
+}
+
+code, pre {
+  background-color: #edf5fa;
+  padding: 2px 5px;
+}
+
+.content .toplink {
+  float: right;
+}
+
+.content h2 i.fa-level-up, .content h3 i.fa-level-up {
+  font-size: 18px;
+}
+
+// display the text over 2 and 3 columns
+
+.text-columns {
+
+  @media only screen and (max-width: $page-width-medium) {
+    img {
+      display: none;
+    }
+  }
+  @media only screen and (min-width: $page-width-small) {
+    -moz-column-count: 2;
+    -moz-column-gap: 1em;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 1em;
+    column-count: 2;
+    column-gap: 1em;
+  }
+  @media only screen and (min-width: $page-width-medium) {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+  @media only screen and (min-width: $page-width-full) {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}

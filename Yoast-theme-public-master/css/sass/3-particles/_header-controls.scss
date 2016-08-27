@@ -1,0 +1,166 @@
+// Search and cart in the header
+.header-controls-holder {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  //z-index: 2;
+
+  max-width: $page-width-full-unitless * 16px; // fallback
+  max-width: $page-width-full;
+
+  width: 100%;
+  margin: 0 auto;
+
+  @media only screen and (min-width: $page-width-medium) {
+    position: relative;
+    z-index: 30;
+  }
+
+}
+
+.header-controls {
+  position: absolute;
+  right: $spacing / 4;
+  top: .9em;
+  @include display-flex;
+
+  @media only screen and (min-width: $page-width-medium) {
+    font-size: .75em;
+    right: $spacing / 4;
+    top: .4em;
+
+    .siteheader--home & {
+      top: .6em;
+    }
+  }
+
+  @media only screen and (min-width: $page-width-medium) {
+    font-size: 1em;
+
+  }
+
+  @media only screen and (min-width: $page-width-full) {
+    right: 0;
+  }
+
+  a, button {
+    color: $color-white;
+    display: inline-block;
+    @include vendor(flex-shrink, 0);
+    text-decoration: none;
+    margin: 0;
+    padding: 0 5px;
+    width: auto;
+    border: none;
+    line-height: 1em;
+
+    &:hover {
+      color: $color-white;
+      text-decoration: none;
+    }
+
+    &:focus {
+      color: $color-white;
+      text-decoration: none;
+    }
+  }
+
+  .text-icon {
+    font-size: 1.5em;
+  }
+
+  .cart {
+    padding: .5rem 1rem 0 0;
+    position: relative;
+    font-size: 1.2em;
+
+    .num-items {
+      position: absolute;
+      right: 0;
+      top: -6%;
+      padding: 0 5px;
+      border-radius: 10px;
+      font-size: .6em;
+      color: $color-white;
+
+      //border: 1px solid $color-black;
+      background-color: $color-orange;
+
+      @media only screen and (min-width: $page-width-medium) {
+        right: 16%;
+      }
+    }
+  }
+
+  form {
+    @include display-flex;
+    justify-content: flex-start;
+
+    [type="search"] {
+      @include vendor(appearance, none);
+      margin-bottom: 0;
+      padding: .4em;
+      border: none;
+      border-radius: 0;
+      font-family: $font-stack-default;
+
+      @media only screen and (min-width: $page-width-medium) {
+        width: 9em;
+      }
+
+      @media only screen and (min-width: $page-width-full) {
+        width: inherit;
+      }
+    }
+
+    button {
+      background-color: $color-white;
+      color: $color-black;
+      padding-right: $spacing / 6;
+
+      &:hover, &:focus {
+        color: $color-black;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &--mobile {
+    a, button, .cart {
+      font-size: 1.2em;
+      position: relative;
+      padding: 8px 15px;
+    }
+
+    .cart {
+      img {
+        height: 1.1em;
+        width: 1.4em;
+        position: relative;
+      }
+      .num-items-container {
+          position: relative;
+          top: -35px;
+          left: -3px;
+        .num-items {
+        }
+      }
+    }
+
+    a.is-active {
+      &::after {
+        content: '';
+        position: absolute;
+        top: 2.6em;
+        left: .7rem;
+        right: auto;
+        border-top: 1rem solid $color-pink-dark;
+        border-left: 1rem solid transparent;
+        border-right: 1rem solid transparent;
+      }
+
+    }
+
+  }
+}

@@ -1,0 +1,146 @@
+.llms-syllabus-wrapper {
+	padding: 0 0 ( $spacing * 4 ) 0;
+
+	.syllabus-section {
+		border-bottom: 1px solid $scheme-academy-primary;
+		position: relative;
+		padding: $spacing-half 0;
+
+		.supports-filter & {
+			&::after {
+				content: '';
+				border: none;
+				border-top: 20px solid $color-white;
+				border-left: 40px solid transparent;
+				border-right: 40px solid transparent;
+				position: absolute;
+				bottom: -19px;
+				left: 50%;
+				z-index: 1;
+				height: 0;
+				line-height: 0;
+				@include vendor(transform, translateX(-50%));
+			}
+		}
+
+		h3,
+		a,
+		h5 {
+			color: $scheme-academy-primary;
+		}
+
+		.fa {
+			font-size: 1em;
+		}
+
+		.fa-caret-down {
+			margin: 0 0 0 10px;
+		}
+
+		.fa-check-square {
+			color: $color-green;
+		}
+
+		&.closed {
+			.lessons {
+				display: none;
+			}
+
+			&::after {
+				content: none;
+			}
+		}
+
+		&.open {
+			margin-bottom: 1em;
+			
+			.fa-caret-down {
+				display: none;
+			}
+		}
+
+		&.complete-section {
+			button:hover h3::before {
+				text-decoration: none;
+			}
+		}
+		
+		&.current-section {
+			border-bottom-color: $scheme-academy-secondary;
+
+			h3,
+			a,
+			h5 {
+				color: $scheme-academy-secondary;
+			}
+			
+			.fa-check-square {
+				display: none;
+			}
+		}
+
+		&.unavailable-section {
+			border-bottom-color: $color-grey-quote;
+
+			h3,
+			a,
+			h5,
+			button {
+				color: $color-grey-quote;
+
+				&:hover {
+					color: $color-grey-quote;
+				}
+			}
+
+			.fa-check-square {
+				display: none;
+			}
+		}
+	}
+
+	.llms-lesson-link {
+		display: block;
+		text-align: left;
+		margin: $spacing-half 0 0 0;
+		text-decoration: none;
+		font-family: $font-stack-default;
+
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
+	}
+
+	.lessons {
+		margin-bottom: $spacing-quarter;
+
+		.is-complete {
+			&::before {
+				content: '\f14a';
+				font-family: 'FontAwesome';
+				color: $color-green;
+				margin-right: $spacing-quarter;
+			}
+		}
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	button {
+		background: none;
+		width: 100%;
+		text-align: left;
+		padding-left: 0;
+
+		&:after {
+			content: none;
+		}
+
+		&:hover, &:focus {
+			background: none;
+			color: $scheme-academy-primary;
+		}
+	}
+}

@@ -1,0 +1,70 @@
+.table--invite-overview {
+	text-align: left;
+	width: 100%;
+	font-family: $font-stack-article;
+
+	th, td {
+		border-left: 0;
+		border-right: 0;
+		padding-left: 0;
+	}
+
+	tr:first-of-type {
+		th, td {
+			border-top: 0;
+		}
+	}
+
+	thead th {
+		border-bottom: 1px solid $color-grey-line;
+	}
+
+	.fa-check-square {
+		margin: 0 .75rem 0 0;
+		color: $color-green;
+	}
+
+	.fa-arrow-circle-right {
+		color: $color-grey-quote;
+	}
+}
+
+.manage-invites__form {
+	display: flex;
+	
+	label {
+		padding-right: 15px;
+		flex-grow: 100;
+	}
+}
+
+.manage-invites__add-email {
+	font-family: $font-stack-article;
+
+	.yoast_academy & {
+		,
+		&:hover,
+		&:focus {
+			background: none;
+			color: $color-black
+		}
+	}
+
+	.fa {
+		color: $color-grey;
+		position: relative;
+		top: 4px;
+		font-size: 170%;
+	}
+
+	&:hover,
+	&:focus {
+		.fa {
+			color: $color-grey-hover;
+		}
+	}
+}
+
+.manage-invites__remaining {
+	color: $color-pink;
+}

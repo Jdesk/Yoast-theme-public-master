@@ -1,0 +1,14 @@
+{
+    "name": "yoast/yoast-theme",
+    "description": "Theme used on yoast.com and other yoast sites",
+    "type": "wordpress-theme",
+    "require": {
+        "composer/installers": "^1.0"
+    },
+    "authors": [
+        {
+            "name": "Team Yoast",
+            "email": "suppor@yoast.com"
+        }
+    ]
+}

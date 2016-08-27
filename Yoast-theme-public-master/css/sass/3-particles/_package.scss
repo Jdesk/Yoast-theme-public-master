@@ -1,0 +1,119 @@
+.package {
+  position: relative;
+  padding: $spacing-half;
+  text-align: left;
+  font-family: $font-stack-article;
+  margin-bottom: $spacing;
+  border-radius: 20px 20px 0 20px;
+
+  li, p {
+    font-family: $font-stack-article;
+    font-size: 0.9em;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  p + p {
+    margin-top: 0.5em;
+  }
+
+  h4 {
+    font-size: 1.3em;
+    margin-bottom: .5em;
+  }
+
+  h4, a {
+    color: $scheme-review-primary;
+    font-family: $font-stack-default;
+  }
+
+  &__content {
+    min-height: 8em;
+  }
+
+  &__notice {
+    font-style: italic;
+  }
+
+  &__ribbon {
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    width: 80px;
+    height: auto;
+  }
+
+  .edd_download_purchase_form {
+    padding-bottom: 0;
+  }
+
+  .edd_download_quantity_wrapper {
+    display: none;
+  }
+
+  // Because this is an input the browser puts the line-height to "normal", rectify this.
+  input[type="submit"] {
+    line-height: $line-height-default;
+    display: block !important;
+    margin-bottom: 0;
+  }
+
+  button {
+    margin: 1em 0 !important;
+    width: 100%;
+    text-align: left;
+    background-color: $scheme-review-primary;
+    color: $color-black;
+  }
+
+  button::after {
+    border: 0;
+  }
+
+  .edd_go_to_checkout {
+    display: none;
+  }
+
+}
+
+.theme-review .bordered.package--cta {
+  border-color: $color-orange;
+
+  h4, h4 a, a {
+    color: $color-orange;
+  }
+
+  li {
+    font-weight: bold;
+  }
+
+  button {
+    background-color: $color-orange;
+    color: $color-white;
+  }
+
+}
+
+.theme-review .bordered.package--platinum {
+
+  button {
+    color: $color-white;
+  }
+
+}
+
+.theme-review .bordered.package--consulting {
+  border-color: $scheme-academy-secondary;
+
+  h4, h4 a, a {
+    color: $scheme-academy-secondary;
+  }
+
+  button {
+    background-color: $scheme-academy-secondary;
+    color: $color-white;
+  }
+
+}

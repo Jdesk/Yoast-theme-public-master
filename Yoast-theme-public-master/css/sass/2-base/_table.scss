@@ -1,0 +1,18 @@
+table {
+  margin-bottom: $spacing;
+
+  &.full-width {
+    width: 100%;
+  }
+}
+
+th, td {
+  border: 1px solid $color-grey-line;
+  padding: $spacing-quarter $spacing-half;
+  border-collapse: collapse;
+}
+
+thead th {
+  border-bottom: 1px solid $color-purple;
+  text-align: left;
+}

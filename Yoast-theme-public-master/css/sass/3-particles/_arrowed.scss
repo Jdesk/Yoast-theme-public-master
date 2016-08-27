@@ -1,0 +1,182 @@
+
+@media only screen and (max-width: $page-width-small) {
+
+	.arrowed-small {
+		position: relative;
+		margin-bottom: 1em!important;
+		font-size: .9rem;
+		padding: 0.55rem 0.8rem;
+		line-height: 1.88 * 1.222;
+		border: 1px solid;
+
+		a, .more__supertitle, .more__title, h2, h3  {
+			font-size: 1rem;
+			line-height: 2;
+			font-weight: normal;
+			margin-bottom: 0!important;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+
+		//@supports ( (filter: drop-shadow(1px 0 0 black)) or (-webkit-filter: drop-shadow(1px 0 0 black) )  ) {
+		.supports-filter & {
+
+			$arrowwidth: 1.6rem;
+
+			border-radius: 0;
+			margin-right: $arrowwidth;
+			border-right: none;
+			overflow: visible;
+			max-height: 2 * $arrowwidth;
+
+			&::after {
+				content: '';
+				position: absolute;
+				right: - ($arrowwidth - .1rem);
+				top: -1px;
+				border-left: $arrowwidth solid $color-white;
+				border-top: $arrowwidth solid transparent;
+				border-bottom: $arrowwidth solid transparent;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $page-width-medium) {
+
+	.arrowed-medium {
+		position: relative;
+		margin-bottom: 1em!important;
+		font-size: 1.1rem;
+		padding: 0.55rem 0.8rem;
+		line-height: 1.88em;
+		border: 1px solid;
+		overflow-y: hidden;
+
+		a, .more__supertitle, .more__title, h2, h3  {
+			font-size: 1rem;
+			font-weight: normal;
+			margin-bottom: 0!important;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+
+		.supports-filter & {
+			$arrowwidth: 1.6rem;
+
+			border-radius: 0;
+			margin-right: $arrowwidth;
+			border-right: none;
+			overflow: visible;
+			max-height: 2 * $arrowwidth;
+
+			&::after {
+				content: '';
+				position: absolute;
+				right: - ($arrowwidth - .1rem);
+				top: -1px;
+				border-left: $arrowwidth solid $color-white;
+				border-top: $arrowwidth solid transparent;
+				border-bottom: $arrowwidth solid transparent;
+			}
+		}
+	}
+}
+
+
+.arrowed {
+	position: relative;
+	font-size: 1.2rem;
+	padding: 0.6rem 0.8rem;
+	line-height: 1.88em;
+	border: 1px solid;
+	@include vendor(flex-shrink, 0);
+	overflow: hidden;
+
+
+	a, .more__supertitle, .more__title, h2, h3  {
+		font-size: 1rem;
+		font-weight: normal;
+		margin-bottom: 0!important;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+	.supports-filter & {
+		$arrowwidth: 1.8rem;
+
+		border-radius: 0;
+		margin-right: $arrowwidth;
+		border-right: none;
+		overflow: visible;
+		max-height: 2 * $arrowwidth;
+		max-width: 90%;
+
+		&::after {
+			content: '';
+			position: absolute;
+			right: - ($arrowwidth - .1rem);
+			top: -1px;
+			border-left: $arrowwidth solid $color-white;
+			border-top: ($arrowwidth + .1rem) solid transparent;
+			border-bottom: $arrowwidth solid transparent;
+		}
+
+	}
+}
+
+@mixin line-arrow-color($color) {
+	&::after {
+		@include vendor(filter, drop-shadow(1px 0 0 $color));
+	}
+}
+
+
+.arrowed-small,
+.arrowed-medium,
+.arrowed {
+
+	.theme-home &,
+	&.theme-home  {
+		@include line-arrow-color($scheme-home-primary);
+	}
+
+	.theme-academy &,
+	&.theme-academy {
+		@include line-arrow-color($scheme-academy-primary);
+	}
+
+	&.theme-academy--secondary, &.border-color-academy--secondary {
+		@include line-arrow-color($scheme-academy-secondary);
+	}
+
+	.theme-software &,
+	&.theme-software {
+		@include line-arrow-color($scheme-software-primary);
+	}
+
+	&.theme-software--secondary, &.border-color-software--secondary {
+		@include line-arrow-color($scheme-software-secondary);
+	}
+
+	.theme-review &,
+	&.theme-review {
+		@include line-arrow-color($scheme-review-primary);
+	}
+
+	&.theme-review--secondary {
+		@include line-arrow-color($scheme-review-secondary);
+	}
+
+	.theme-about &,
+	&.theme-about {
+		@include line-arrow-color($scheme-about-primary);
+	}
+
+	&.theme-about--secondary {
+		@include line-arrow-color($scheme-about-secondary);
+	}
+}

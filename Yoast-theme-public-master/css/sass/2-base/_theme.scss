@@ -1,0 +1,153 @@
+@mixin headers( $color-primary: black, $color-secondary: black ) {
+  h1,
+  .h1 {
+    color: $color-primary;
+  }
+
+  h2, h3, h4, h5, h6,
+  .h2, .h3, .h4, .h5, .h6 {
+    color: $color-primary;
+    a {
+      color: $color-primary;
+      text-decoration: none;
+      &:hover, &:focus {
+        color: $color-secondary;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@mixin theme($color-primary: black, $color-secondary: black, $color-tertiary: black,  $color-mainnav: black, $color-subnav: black ) {
+  @include headers( $color-primary, $color-secondary );
+
+  a {
+    color: $color-secondary;
+    text-decoration: underline;
+
+    &:hover, &:focus {
+      color: $color-primary;
+      text-decoration: underline;
+    }
+
+    &.more {
+      color: $color-primary;
+      text-decoration: none;
+
+      &:hover, &:focus {
+        color: $color-secondary;
+        text-decoration: none;
+      }
+    }
+  }
+
+  p.readmore a {
+    color: $color-secondary;
+  }
+
+  .arrowed, .arrowed-medium, .arrowed-small {
+    border-color: $color-primary;
+  }
+
+  dl a {
+    //color: $color-secondary;
+  }
+
+  .button, button {
+    text-decoration: none;
+
+    &:hover, &:focus {
+      color: $color-white;
+      text-decoration: underline;
+
+      &.dimmed {
+        color: $color-grey-text;
+      }
+    }
+  }
+
+  // all links placed in a fill block get the color white
+  .fill {
+    color: $color-white;
+    a {
+      color: $color-white;
+      text-decoration: none;
+      &:hover, &:focus {
+        color: $color-white;
+        text-decoration: underline;
+      }
+    }
+    h1, h2, h3, h4 {
+      color: $color-white;
+    }
+  }
+
+  hr {
+    border-top: 1px solid $color-secondary;
+
+    &::after {
+      @include vendor(filter, drop-shadow(0 1px 0 $color-secondary));
+    }
+  }
+
+  .extra {
+    h2, h3, h4,
+    .h2, .h3, .h4 {
+      color: $color-secondary
+    }
+  }
+
+  // newsletter block
+  .newsletter {
+    background: $color-secondary;
+    color: $color-white;
+    h1, h2, h3, h4,
+    .h1, .h2, .h3, .h4 {
+      color: $color-white;
+    }
+  }
+
+  // bio block
+  .bio {
+    //border-top: 1px solid $color-secondary;
+    //border-bottom: 1px solid $color-primary;
+    p {
+      color: $color-primary;
+    }
+  }
+
+  // breadcrumbs
+  .breadcrumb {
+    color: $color-secondary;
+  }
+
+  input, textarea {
+    border-color: $color-secondary;
+  }
+
+  .sitenav {
+    background-color: $color-mainnav;
+
+    @media only screen and (min-width: $page-width-medium) {
+      &::before {
+        background-color: $color-mainnav;
+      }
+    }
+  }
+
+  .subnav {
+    background-color: $color-subnav;
+  }
+
+  .syllabus-section {
+    &::after {
+      @include vendor(filter, drop-shadow(0 1px 0 $color-primary));
+    }
+
+    &.current-section {
+      &::after {
+        @include vendor(filter, drop-shadow(0 1px 0 $color-secondary));
+      }
+    }
+  }
+}

@@ -1,0 +1,296 @@
+.rowholder {
+	background-color: $color-white;
+	padding-bottom: 1px;
+	position: relative;
+}
+
+.row {
+	display: block;
+	position: relative;
+	max-width: $page-width-full-unitless * 16px; // fallback
+	max-width: $page-width-full;
+	width: 100%;
+	margin: 0 auto;
+	
+	@media only screen and (max-width: $page-width-full-padded) {
+		padding: 0 1rem;
+	}
+
+	.announcement + & {
+		padding-top: $spacing;
+	}
+}
+
+.hidden {
+	display: none !important;
+}
+
+.full {
+	width: 100%; 
+}
+
+.relative {
+	position: relative;
+}
+
+@media only screen and (min-width: $page-width-full) {
+	// small column for content
+	.content {
+		width: 600px;
+		margin-right: 68px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	// column next to the content for extra information
+	.extra {
+		width: 292px;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+.content--tags {
+	margin-bottom: $spacing;
+}
+
+.extra {
+	margin-bottom: $spacing;
+}
+
+.grid {
+	@include display-flex;
+	@include vendor(flex-wrap, wrap);
+	@include vendor(justify-content, space-between);
+	width: 100%;
+	vertical-align: top;
+
+	.old-ie & {
+		> div {
+			vertical-align: top;
+			width: 100%;
+		}
+	}
+}
+
+// half grid
+$one-half: percentage(450 / 980);
+$one-half-gutter: percentage(40 / 980);
+
+	.one-half {
+		@include vendor(flex-basis, $one-half); 
+		max-width: $one-half;
+	}
+
+	.offset-one-half {
+		margin-left: $one-half + $one-half-gutter;
+	}
+
+// thirds grid
+$one-third: percentage(292 / 980);
+$one-third-gutter: percentage(52 / 980);
+
+	.one-third {
+		@include vendor(flex-basis, $one-third); 
+		max-width: $one-third;
+	}
+
+	.two-third {
+		@include vendor(flex-basis, 2 * $one-third + $one-third-gutter);
+		max-width: 2 * $one-third + $one-third-gutter;
+	}
+
+	.offset-one-third {
+		margin-left: $one-third + $one-third-gutter;
+	}
+
+	.offset-two-third {
+		margin-left: 2 * $one-third + 2 * $one-third-gutter;
+	}
+
+
+
+// fourth grid
+$one-fourth: percentage(224 / 980);
+$one-fourth-gutter: percentage(28 / 980);
+
+	.one-fourth {
+		@include vendor(flex-basis, $one-fourth);
+		max-width: $one-fourth;
+	}
+
+	.two-fourth {
+		@include vendor(flex-basis,	2 * $one-fourth + $one-fourth-gutter);
+		max-width:	2 * $one-fourth + $one-fourth-gutter;;
+	}
+
+	.three-fourth {
+		@include vendor(flex-basis, 3 * $one-fourth + 2 * $one-fourth-gutter);
+		max-width: 3 * $one-fourth + 2 * $one-fourth-gutter;
+	}
+
+	.offset-one-fourth {
+		margin-left: $one-fourth + $one-fourth-gutter;
+	}
+
+	.offset-two-fourth {
+		margin-left: 2 * $one-fourth + 2 * $one-fourth-gutter;
+	}
+
+	.offset-three-fourth {
+		margin-left: 3 * $one-fourth + 3 * $one-fourth-gutter;
+	}
+
+
+// fourth grid
+$one-fifth: percentage(180 / 980);
+$one-fifth-gutter: percentage(16 / 980);
+
+	.one-fifth {
+		@include vendor(flex-basis, $one-fifth);
+		max-width: $one-fifth;
+	}
+
+	.two-fifth {
+		@include vendor(flex-basis,	2 * $one-fifth + $one-fifth-gutter);
+		max-width:	2 * $one-fifth + $one-fifth-gutter;
+	}
+
+	.three-fifth {
+		@include vendor(flex-basis, 3 * $one-fifth + 2 * $one-fourth-gutter);
+		max-width: 3 * $one-fifth + 2 * $one-fifth-gutter;
+	}
+
+	.offset-one-fifth {
+		margin-left: $one-fifth + $one-fifth-gutter;
+	}
+
+	.offset-two-fifth {
+		margin-left: 2 * $one-fifth + 2 * $one-fifth-gutter;
+	}
+
+	.offset-three-fifth {
+		margin-left: 3 * $one-fifth + 3 * $one-fifth-gutter;
+	}
+
+// seventh grid
+$one-seventh: percentage(116 / 980);
+$one-sevent-gutter: percentage(28 / 980);
+
+	.one-seventh {
+		@include vendor(flex-basis, $one-seventh); 
+		max-width: $one-seventh;
+	}
+
+	.two-seventh {
+		@include vendor(flex-basis, 2 * $one-seventh + $one-sevent-gutter);
+		max-width: 2 * $one-seventh + $one-sevent-gutter;
+	}
+
+	.three-seventh {
+		@include vendor(flex-basis, 3 * $one-seventh + 2 * $one-sevent-gutter);
+		max-width: 3 * $one-seventh + 2 * $one-sevent-gutter;
+	}
+
+	.four-seventh {
+		@include vendor(flex-basis, 4 * $one-seventh + 3 * $one-sevent-gutter); 
+		max-width: 4 * $one-seventh + 3 * $one-sevent-gutter;
+	}
+
+	.five-seventh {
+		@include vendor(flex-basis, 5 * $one-seventh + 4 * $one-sevent-gutter); 
+		max-width: 5 * $one-seventh + 4 * $one-sevent-gutter;
+	}
+
+	.offset-one-seventh {
+		margin-left: $one-seventh + $one-sevent-gutter;
+	}
+
+	.offset-two-seventh {
+		margin-left: 2 * $one-seventh + 2 * $one-sevent-gutter;;
+	}
+
+	.offset-three-seventh {
+		margin-left: 3 * $one-seventh + 3 * $one-sevent-gutter;
+	}
+
+	.offset-four-seventh {
+		margin-left: 4 * $one-seventh + 4 * $one-sevent-gutter;
+	}
+
+// helper grid classes for different dimensions
+
+
+.grid {
+  	> * {
+	 	width: 100%;
+
+		@media only screen and (max-width: $page-width-medium) {
+			max-width: 100%;
+			margin-left: 0;
+			@include vendor(flex-basis, 100%);
+		}
+	 }
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+
+// for newsletter
+@media only screen and (min-width: $page-width-small) and (max-width: $page-width-full){
+	.medium-one-third {
+		@include vendor(flex-basis, $one-third); 
+		max-width: $one-third;
+	}
+	.medium-two-third {
+		@include vendor(flex-basis, 65%);
+		max-width: 65%;
+	}
+}
+
+// for footer
+@media only screen and (min-width: $page-width-small) and  (max-width: $page-width-medium){
+	.medium-one-half {
+		@include vendor(flex-basis, $one-half); 
+		max-width: $one-half;
+	}
+}
+
+// to footer
+@media only screen and (max-width: $page-width-small){
+	.small-full {
+		@include vendor(flex-basis, 100%); 
+		max-width: 100%;
+	}
+
+	.small-half {
+		@include vendor(flex-basis, 50%); 
+		max-width: 50%;
+	}
+
+	.small-one-fifth {
+		@include vendor(flex-basis, 20%); 
+		max-width: 20%;
+	}
+
+	.small-four-fifth {
+		@include vendor(flex-basis, 80%); 
+		max-width: 80%;
+	}
+
+	.small-offset-four-fifth {
+		margin-left: 80%;
+	}
+}
+
+@media only screen and (max-width: 40em) {
+	.newsletter {
+		.grid > div {
+			flex-basis: 100%!important;
+			max-width: 100%!important;
+		}
+	}
+}
+
+

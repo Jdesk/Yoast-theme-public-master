@@ -1,0 +1,227 @@
+// more-base
+
+.more {
+	position: relative;
+	display: block;
+	margin-bottom: 0.75em;
+	font-size: .9em;
+	text-decoration: none;
+	@include display-flex;
+	@include vendor(align-items, stretch);
+	font-weight: normal;
+	font-family: $font-stack-default;
+
+	@media only screen and (min-width: $page-width-medium) {
+		font-size: 1.25em;
+	}
+
+	&--naked {
+		margin-bottom: 0;	
+	}
+
+	&:hover, &:focus {
+		text-decoration: none;	
+
+		.more__holder, .more__pointer {
+			text-decoration: underline;
+		}	
+	}
+}
+
+
+
+// holder-base
+.more__holder {
+	@include display-flex;
+	@include vendor(flex-wrap, wrap);
+	@include vendor(justify-content, space-between);
+	@include vendor(align-items, baseline);
+	@include vendor(flex, 0 1 auto);
+	width: 100%;
+	border:1px solid;
+	padding: 0.55rem 0.8rem;
+
+	.supports-filter & {
+		min-height: 2.75em;
+	}
+
+	& + .more__img,
+	& + .more__plug {
+		margin: 0 0 0 1rem;
+	}
+	
+	&--naked {
+		@media only screen and (min-width: $page-width-medium) {
+			padding: 0.2rem 0 0.55rem;
+		}
+		border: 0;
+	}
+
+	&--left {
+		@include vendor(justify-content, flex-start);
+	}
+
+
+	@media only screen and (max-width: $page-width-medium) {
+		.arrowed-medium & {
+			padding: 0;
+		}
+	}
+	
+}
+
+.more__save {
+	display: none;
+	@media only screen and (min-width: $page-width-small) {
+		display: inline-block;
+		@include rounded--small;
+		@include vendor(flex, 0 0 55px);
+		font-family: $font-stack-default;
+		height: 55px;
+		width: 55px;
+		font-size: 0.7em;
+		line-height: 1em;
+		margin-right: 1rem;
+		text-align: center;
+		padding: 0.2rem 0.2rem;
+		span {
+			font-size: 1.5em;
+			line-height: 1.1em;
+		}
+		&--alone {
+			font-size: 1.1em;
+			margin-bottom: $spacing;
+		}
+	}
+}	
+
+.more__title {
+	//text-overflow: ellipsis;
+	//white-space: nowrap;
+	//overflow: hidden;
+}
+
+
+.more__logo {
+	vertical-align: middle;
+	margin-left: 1rem;
+}
+
+@media only screen and (min-width: $page-width-medium) {
+	// more base
+	.more__title {
+		margin-right: 1rem;
+		@include vendor(align-self, center);
+	}
+
+	.more__subtitle {
+		font-family: $font-stack-article;
+		font-weight: normal;
+		color: $color-black;
+		font-size: 0.8em;
+		@include vendor(align-self, center);
+	}
+
+	.more__supertitle {
+		font-weight: 300;
+		font-size: 1.2em;
+		margin-right: 1rem;
+	}
+
+	.more__img {
+		@include rounded--small;
+		@include vendor(flex, 0 0 55px);
+		height: 55px;
+		margin-right: 1rem;
+	}
+
+	.more__link {
+		max-width: 40%;
+		line-height: 1.4em;
+		text-align: right;
+		font-weight: 400;
+		text-decoration: underline;
+		@include vendor(align-self, center);
+	}
+
+	.more__superlink {
+		font-weight: 300;
+		margin-top: 0.3em;
+	}
+
+	.more__sublink {
+		font-family: $font-stack-article;
+		font-weight: normal;
+		font-size: 0.8em;
+		margin-top: 0.7em;
+	}
+}
+
+.more__pointer {
+	margin-left: $spacing-half;
+}
+
+
+
+.more__icon,
+.more__plug {
+	display: none;
+	@media only screen and (min-width: $page-width-full) {
+		@include vendor(flex, 0 0 55px);
+		display: inline-block;
+		margin-right: 1rem;
+		height: 55px;
+		width: 55px;
+		font-size: 2.4rem;
+		line-height: 1.45em;
+		text-align: center;
+		vertical-align: middle;
+
+		&--small {
+			height: 40px;
+			width: 40px;
+			font-size: 1.8rem;
+			line-height: 1.4em;
+			margin-right: 1rem;
+		}
+	}
+}
+
+.more--category {
+
+	margin-bottom: 0;
+	line-height: 1em;
+
+	.more__supertitle {
+		font-size: 1.1em;
+		margin-right: .5em;
+
+		i.fa {
+			margin-left: .5em;
+		}
+	}
+
+	.more__holder {
+		min-height: 2em;
+	}
+
+	.more__superlink {
+		font-size: 0.9em;
+		font-family: $font-stack-article;
+	}
+
+	.more__plug {
+		@media only screen and (min-width: $page-width-full) {
+			font-size: 1.5rem;
+			margin-right: .5rem;
+			line-height: 1.3em;
+			height: 1.1em;
+			flex: 0 0 30px;
+			text-align: left;
+		}
+	}
+
+	.more__plug ~ .arrowed {
+		color: $color-orange;
+	}
+}

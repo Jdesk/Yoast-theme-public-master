@@ -1,0 +1,33 @@
+.sitefooter {
+	padding: $spacing-half;
+	//z-index: 10;
+	position: relative;
+
+	p {
+		margin-bottom: 0;
+	}
+
+	a {
+		line-height: 1;
+		font-weight: 300;
+		text-decoration: none;
+	}
+
+	li {
+		display: block;
+		padding-bottom: .5rem;
+		line-height: 1;
+		font-weight: 300;
+
+		@media only screen and (min-width: $page-width-small) {
+			display: inline-block;
+			border-left: 1px solid $color-white;
+			padding: 0 $spacing-half;
+		}
+
+		&:first-of-type {
+			padding-left: 0;
+			border-left: none;
+		}
+	}
+}

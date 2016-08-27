@@ -1,0 +1,39 @@
+.helper-border {
+
+	&-white {
+		border-color: $color-white !important;
+	}
+
+	&-academy {
+		border-color: $scheme-academy-primary !important;
+	}
+
+	&-academy--secondary {
+		border-color: $scheme-academy-secondary !important;
+	}
+
+	&-software {
+		border-color: $scheme-software-primary !important;
+	}
+
+	&-software--secondary {
+		border-color: $scheme-software-secondary !important;
+	}
+
+	&-review {
+		border-color: $scheme-review-primary !important;
+	}
+
+	&-review--secondary {
+		border-color: $scheme-review-secondary !important;
+	}
+
+	&-about {
+		border-color: $scheme-about-primary !important;
+	}
+
+	&-about--secondary {
+		border-color: $scheme-about-secondary !important;
+	}
+
+}

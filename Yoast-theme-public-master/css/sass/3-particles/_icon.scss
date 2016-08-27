@@ -1,0 +1,75 @@
+.text-icon {
+  // http://fortawesome.github.io/Font-Awesome/cheatsheet/
+  font-family: $font-stack-icon;
+  //font-size: .9em;
+
+  &--social {
+    font-size: 1.8em;
+    vertical-align: middle;
+    margin: 0 0.1rem;
+    line-height: 1em;
+  }
+
+  &--twitter {
+    color: #55acee;
+    &:hover, &:focus {
+      color: desaturate(lighten(#55acee, 8), 12);
+    }
+  }
+  &--linkedin {
+    color: #008cc9;
+    &:hover, &:focus {
+      color: desaturate(lighten(#008cc9, 20), 30);
+    }
+  }
+  &--facebook {
+    color: #3B5998;
+    &:hover, &:focus {
+      color: desaturate(lighten(#3B5998, 20), 30);
+    }
+  }
+  &--pinterest {
+    color: #BD081C;
+    &:hover, &:focus {
+      color: desaturate(lighten(#BD081C, 20), 30);
+    }
+  }
+
+}
+
+.fa {
+  &.fa-bank-transfer {
+    background: url(../images/shop/BankTransfer.svg) top left no-repeat transparent;
+
+    &.fa-icon {
+      width: 1.5em;
+      height: 1.2em;
+      margin-top: 2px;
+    }
+  }
+  &.fa-icon {
+    font-size: 2.5em;
+    float: left;
+    margin: 0 10px 0 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &.fa-cc-paypal {
+    color: #05305c;
+  }
+
+  &.fa-cc-mastercard {
+    color: #ec1d23;
+  }
+
+  &.fa-cc-visa {
+    color: #0f60a2;
+  }
+
+  &.fa-cc-amex {
+    color: #0053c7;
+  }
+}

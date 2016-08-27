@@ -1,0 +1,23 @@
+.hide-on-mobile {
+	@media only screen and (max-width: $page-width-small) {
+		display: none !important;
+	}
+}
+
+.hide-on-tablet {
+	@media only screen and (max-width: $page-width-medium) {
+		display: none !important;
+	}
+}
+
+.hide-on-desktop {
+	@media only screen and (min-width: $page-width-medium) {
+		display: none !important;
+	}
+}
+
+.show-on-desktop {
+	@media only screen and (max-width: $page-width-full) {
+		display: none !important;
+	}
+}

@@ -1,0 +1,31 @@
+#social-share {
+	height: 60px;
+	margin: 10px 0 30px 0;
+
+	@include clearfix;
+
+	.socialbox {
+		float: left;
+		margin: 0 20px 0 0;
+		font-family: $font-stack-default;
+		font-size: 1em;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+
+	.socialbox a {
+		color: $color-black;
+	}
+
+	.socialbox .fa {
+		font-size: 2em;
+		margin-right: 5px;
+		vertical-align: middle;
+	}
+
+	.fa-print {
+		color: $color-grey-quote;
+	}
+}

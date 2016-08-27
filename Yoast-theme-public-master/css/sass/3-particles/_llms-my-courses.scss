@@ -1,0 +1,70 @@
+.course-list {
+	$height: 55px;
+
+	img {
+		height: $height;
+		width: auto;
+	}
+	
+	.my-courses-course {
+		@include display-flex;
+		height: $height;
+
+		margin: 1rem 0 0 0;
+	}
+
+	.title {
+		border: 1px solid $scheme-academy-primary;
+		margin: 0 0 0 1rem;
+		padding: 0 1rem;
+		flex-grow: 100;
+
+		h3 {
+			line-height: $height;
+		}
+	}
+
+	.my-courses-progress {
+		background: $color-grey;
+		color: $color-grey-text;
+		height: $height;
+		line-height: $height;
+
+		margin: 0 0 0 1rem;
+		padding: 0 1rem;
+	}
+
+	.rectangle {
+		background-color: $color-pink;
+		color: white;
+		font-size: 1.1em;
+
+		i.fa {
+			font-size: 140%;
+			margin: 4px 10px 0 0;
+		}
+	}
+
+	.rectangle,
+	.button {
+		height: $height;
+		line-height: $height;
+		padding: 0;
+		max-height: none;
+		-webkit-transition: none;
+		-moz-transition: none;
+		-ms-transition: none;
+		-o-transition: none;
+		transition: none;
+
+		margin: 0 0 0 1rem;
+		padding: 0 1rem;
+	}
+
+	.button {
+		&::after {
+			border-top-width: $height / 2;
+			border-bottom-width: $height /2 ;
+		}
+	}
+}

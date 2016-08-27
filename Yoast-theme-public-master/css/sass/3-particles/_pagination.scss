@@ -1,0 +1,29 @@
+.pagination {
+	@include rounded--small;
+	font-family: $font-stack-default;
+	padding: 0 1rem;
+	margin-bottom: $spacing;
+	ul {
+		padding-left: 0;
+		margin: 0.5rem 0;
+	}
+
+	li {
+		list-style: none;
+		display: inline-block;
+		padding: 0 0.7rem;
+	}
+
+	.mid {
+		margin-left: -0.3rem;
+	}
+
+	.active a {
+		color: $color-black;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+}

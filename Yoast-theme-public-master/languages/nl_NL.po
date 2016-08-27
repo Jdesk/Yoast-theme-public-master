@@ -1,0 +1,808 @@
+# Copyright (C) 2015 Frozen Rockets BV & Team Yoast
+# This file is distributed under the same license as the Yoast.com V5 package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Yoast.com V5 5.0.0\n"
+"Report-Msgid-Bugs-To: translate@yoast.com\n"
+"POT-Creation-Date: 2015-10-02 20:57+0200\n"
+"PO-Revision-Date: 2015-10-02 20:59+0200\n"
+"Last-Translator: \n"
+"Language-Team: Yoast Translate\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.5\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:17
+msgid "Sorry, this page could not be found."
+msgstr "Sorry, deze pagina kon niet worden gevonden"
+
+#: 404.php:20
+msgid ""
+"Sorry! The page you are looking for doesn't exist or no longer exists. Some "
+"options for how to find it:"
+msgstr ""
+"Sorry! De pagina die je zoekt bestaat niet, of niet meer. Hier zijn enkele "
+"opties om te vinden wat je zocht:"
+
+#: 404.php:22
+msgid ""
+"If you typed in a URL... make sure the spelling, cApitALiZaTiOn, and "
+"punctuation are correct. Then try reloading the page."
+msgstr ""
+"Als je een URL ingetypt hebt …. zorg dan dat de spelling, kApiTalEn en "
+"streepjes kloppen. Probeer het dan nog eens.\t"
+
+#: 404.php:23
+msgid "Try and find it in the %1$ssitemap%2$s."
+msgstr "Probeer het eens in de %1$ssitemap%2$s."
+
+#: 404.php:24
+msgid "Start over again at the %1$shomepage%2$s."
+msgstr "Begin opnieuw op de %1$shomepage%2$s."
+
+#: 404.php:26
+msgid "Search for it: "
+msgstr "Zoek er naar:"
+
+#: 404.php:35 page-template-front-page.php:35 page.php:30
+msgid "Recent posts"
+msgstr "Recente berichten"
+
+#: archive-yoast_courses.php:15
+msgid "Courses by Yoast"
+msgstr "Cursussen van Yoast"
+
+#: archive-yoast_courses.php:35 archive-yoast_ebooks.php:45 software.php:38
+msgid "Want to know how to improve your site? Order an SEO Website Review"
+msgstr ""
+"Wil je je site verbeteren maar weet niet hoe? Bestel een website review"
+
+#: archive-yoast_plugins.php:17
+msgid "SEO plugins by Yoast"
+msgstr "SEO plugins van Yoast"
+
+#: archive-yoast_plugins.php:19 archive-yoast_plugins.php:61
+msgid "Google Analytics plugins"
+msgstr "Google Analytics plugins"
+
+#: archive-yoast_plugins.php:20 archive-yoast_plugins.php:44
+#: archive-yoast_plugins.php:58
+msgid "Other plugins"
+msgstr "Andere plugins"
+
+#: archive-yoast_plugins.php:33 page-template-front-page.php:47
+msgid "Bundle plugins and save money!"
+msgstr "Koop een bundel en bespaar!"
+
+#: archive-yoast_plugins.php:40
+msgid "Google Analytics by Yoast plugins"
+msgstr "Google Analytics door Yoast plugins"
+
+#: archive-yoast_plugins.php:43 archive-yoast_plugins.php:60
+msgid "WordPress SEO plugins"
+msgstr "WordPress SEO plugins"
+
+#: archive.php:144
+msgid "Browse other Yoast Categories"
+msgstr "Bekijk andere Yoast categorieën"
+
+#: html_includes/header-controls-mobile.php:13
+#: html_includes/partials/search.php:13 html_includes/partials/search.php:15
+#: searchform.php:6 searchform.php:8
+msgid "Search"
+msgstr "Zoek"
+
+#: html_includes/header-controls-mobile.php:15
+msgid "Navigation"
+msgstr "Navigatie"
+
+#: html_includes/partials/announcement-addonmodules.php:18
+msgid "Yoast Premium Add-On Modules"
+msgstr "Yoast Premium Add-On Modules"
+
+#: html_includes/partials/announcement-addonmodules.php:30
+#: html_includes/partials/more-plugin.php:27
+msgid "More about %s"
+msgstr "Meer over %s"
+
+#: html_includes/partials/article-intro.php:6
+msgid "by"
+msgstr "door"
+
+#: html_includes/partials/bio.php:14
+msgid "Read all about %s"
+msgstr "Lees alles over %s"
+
+#: html_includes/partials/bio.php:20
+msgid "or find her on"
+msgstr "of vind haar op"
+
+#: html_includes/partials/bio.php:22
+msgid "or find him on"
+msgstr "of vind hem op"
+
+#: html_includes/partials/bio.php:24
+msgid "or find them on"
+msgstr "of vind hen op"
+
+#: html_includes/partials/comments-number.php:6
+msgid "%d Comment"
+msgid_plural "%d Comments"
+msgstr[0] "%d Reactie"
+msgstr[1] "%d Reacties"
+
+#: html_includes/partials/course.php:22 single-yoast_courses.php:42
+msgid "Order this Course now"
+msgstr "Bestel deze cursus u"
+
+#: html_includes/partials/ebook-bundle.php:32
+#: html_includes/shortcodes/bundle.php:25
+msgid "Save %s"
+msgstr "Bespaar %s"
+
+#: html_includes/partials/ebook-bundle.php:38
+msgid "Buy this bundle now"
+msgstr "Koop deze bundel nu"
+
+#: html_includes/partials/ebook.php:20
+msgid "Buy this ebook now"
+msgstr "Koop dit eBook nu"
+
+#: html_includes/partials/llms-certificate-button.php:15
+msgid "Show certificate"
+msgstr "Toon certificaat"
+
+#: html_includes/partials/llms-certificate.php:43
+msgid "Certificate"
+msgstr ""
+
+#: html_includes/partials/llms-certificate.php:119
+msgid "Print Certificate"
+msgstr ""
+
+#: html_includes/partials/llms-continue.php:13
+msgid "Continue"
+msgstr ""
+
+#: html_includes/partials/llms-progress.php:11
+msgid "Course Progress"
+msgstr ""
+
+#: html_includes/partials/meta-full.php:8
+msgid "Post author"
+msgstr "Post auteur"
+
+#: html_includes/partials/meta-full.php:19
+msgid "Tags"
+msgstr "Tags"
+
+#. Template Name of the plugin/theme
+msgid "Categories"
+msgstr "Categorieën"
+
+#: html_includes/partials/more-pluginlist.php:37
+msgid "More about this plugin"
+msgstr "Meer over deze plugin"
+
+#: html_includes/partials/newsletter-subscribe.php:10
+msgid "Subscribe to our newsletter and never miss a post!"
+msgstr "Meld je aan voor onze nieuwsbrief en mis niets!"
+
+#: html_includes/partials/newsletter-subscribe.php:15
+#: html_includes/partials/newsletter-subscribe.php:16
+msgid "Name"
+msgstr "Naam"
+
+#: html_includes/partials/newsletter-subscribe.php:19
+#: html_includes/partials/newsletter-subscribe.php:20
+msgid "Email"
+msgstr "Email"
+
+#: html_includes/partials/newsletter-subscribe.php:23
+msgid "Subscribe &raquo;"
+msgstr "Meld je aan &raquo;"
+
+#: html_includes/partials/plugin-rating.php:18
+#: html_includes/partials/plugin-rating.php:20
+msgid "Rated %s out of 5 Stars"
+msgstr "Waardering %s van 5 sterren"
+
+#: html_includes/partials/plugin-refer-links.php:6
+msgid "Check out all Yoast Plugins"
+msgstr "Bekijk alle Yoast Plugins"
+
+#: html_includes/partials/promoblock-buy-discrete.php:22
+#: html_includes/partials/promoblock-buy.php:26
+#: html_includes/shop/checkout-item.php:43
+msgid "Amount"
+msgstr "Bedrag"
+
+#: html_includes/partials/promoblock-buy-discrete.php:33
+msgid "Add this item to cart &raquo;"
+msgstr "Voeg dit item aan de cart toe &raquo;"
+
+#: html_includes/partials/promoblock-buy.php:14
+msgid "1 year upgrades &amp; support"
+msgstr ""
+
+#: html_includes/partials/promoblock-buy.php:39
+msgid "Buy Premium"
+msgstr ""
+
+#: html_includes/partials/promoblock-plugin-category.php:38
+msgid "More information about %s"
+msgstr ""
+
+#: html_includes/partials/search.php:9
+msgid "Search &raquo;"
+msgstr "Zoek &raquo;"
+
+#: html_includes/partials/social-share.php:29
+msgid "Tweet"
+msgstr "Tweet"
+
+#: html_includes/partials/social-share.php:33
+msgid "Print"
+msgstr "Print"
+
+#: html_includes/shop/checkout-cart.php:49
+msgid "Discount"
+msgstr "Korting"
+
+#: html_includes/shop/checkout-cart.php:61
+msgid "Subtotal"
+msgstr ""
+
+#: html_includes/shop/checkout-cart.php:72
+msgid "VAT (%s%%)"
+msgstr ""
+
+#: html_includes/shop/checkout-cart.php:90 page-checkout.php:18
+msgid "&laquo; Continue shopping"
+msgstr ""
+
+#: html_includes/shop/checkout-cart.php:93
+msgid "Total"
+msgstr ""
+
+#: html_includes/shop/checkout-cross-sell.php:13
+msgid "You may also be interested in"
+msgstr ""
+
+#: html_includes/shop/checkout-renewal.php:17
+msgid "License renewal discount: %s"
+msgstr ""
+
+#: html_includes/shop/form-select-payment.php:13
+msgid "How do you want to pay?"
+msgstr ""
+
+#: html_includes/shop/form-select-payment.php:36
+msgid "Enter payment details"
+msgstr ""
+
+#: html_includes/shop/input-cc-address.php:20
+msgid "Credit Card Billing Details"
+msgstr ""
+
+#: html_includes/shop/input-cc-address.php:21
+msgid ""
+"Your billing address details are used for verification of your credit card, "
+"so please use your credit card's billing address."
+msgstr ""
+
+#: html_includes/shop/input-cc-address.php:23
+msgid "Billing Details"
+msgstr ""
+
+#: html_includes/shop/input-cc-address.php:24
+msgid "Your billing address details are required for tax purposes."
+msgstr ""
+
+#: html_includes/shop/input-cc-address.php:29
+msgid "Address"
+msgstr ""
+
+#: html_includes/shop/input-cc-address.php:36
+msgid "Address Line 2 (optional)"
+msgstr ""
+
+#: html_includes/shop/input-cc-address.php:43
+msgid "City"
+msgstr ""
+
+#: html_includes/shop/input-cc-address.php:50
+msgid "Zip / Postal Code"
+msgstr ""
+
+#: html_includes/shop/input-cc-address.php:59
+msgid "Country"
+msgstr ""
+
+#: html_includes/shop/input-cc-address.php:79
+msgid "State / Province"
+msgstr ""
+
+#: html_includes/shop/input-creditcard.php:12
+msgid "Credit Card Info"
+msgstr ""
+
+#: html_includes/shop/input-creditcard.php:16
+msgid "Card Number"
+msgstr ""
+
+#: html_includes/shop/input-creditcard.php:25
+msgid "Expires"
+msgstr ""
+
+#: html_includes/shop/input-creditcard.php:35
+msgid "Name on card"
+msgstr ""
+
+#: html_includes/shop/input-creditcard.php:42
+msgid "Card code"
+msgstr ""
+
+#: html_includes/shop/input-user-info.php:32
+msgid "Personal Info"
+msgstr ""
+
+#: html_includes/shop/input-user-info.php:36
+msgid "First Name"
+msgstr ""
+
+#: html_includes/shop/input-user-info.php:46
+msgid "Last Name"
+msgstr ""
+
+#: html_includes/shop/input-user-info.php:57
+msgid "Email Address"
+msgstr ""
+
+#: html_includes/shop/input-vat-number.php:10
+msgid "VAT number"
+msgstr ""
+
+#: html_includes/shop/input-vat-number.php:12
+msgid "Please enter a valid VAT number to prevent paying VAT."
+msgstr ""
+
+#: html_includes/shop/input-vat-number.php:13
+msgid "VAT no"
+msgstr ""
+
+#: html_includes/shop/pricing-option.php:18
+msgid "Option:"
+msgstr ""
+
+#: html_includes/shop/pricing-options.php:23
+msgid "Options"
+msgstr ""
+
+#. translators: Text between %1$s and %2$s is hidden on large tablets, text
+#. between %3$s and %4$s is hidden on mobile.
+#: html_includes/shop/progress.php:50
+msgid "Finished"
+msgstr ""
+
+#: html_includes/shop/terms-agreement.php:19
+msgid "Terms of Service"
+msgstr "Voorwaarden"
+
+#: html_includes/shop/terms-agreement.php:21
+msgid "Agree to Terms?"
+msgstr ""
+
+#: html_includes/shop/what-happens-next.php:9
+msgid "What happens next?"
+msgstr ""
+
+#: html_includes/shop/what-happens-next.php:10
+msgid ""
+"After you've completed your payment, you'll receive an email with an "
+"invoice, download details and your license key."
+msgstr ""
+
+#: html_includes/shortcodes/bundle.php:29
+msgid "More about this bundle &raquo;"
+msgstr ""
+
+#: html_includes/shortcodes/plugin-cta.php:9
+#: html_includes/shortcodes/plugin-cta.php:13
+msgid "Buy Premium from $%d"
+msgstr ""
+
+#: html_includes/shortcodes/plugin-cta.php:17
+msgid "Download the Free Plugin"
+msgstr ""
+
+#: html_includes/shortcodes/plugin-info.php:9
+msgid "Plugin information"
+msgstr "Plugin informatie"
+
+#: html_includes/shortcodes/plugin-info.php:11
+msgid "Current version: %s"
+msgstr ""
+
+#: html_includes/shortcodes/plugin-info.php:17
+msgid "See the %s if you want details about recent changes."
+msgstr ""
+
+#: html_includes/shortcodes/plugin-stats.php:8
+msgid "Mindblowing Stats about our free WordPress SEO Plugin"
+msgstr ""
+
+#: html_includes/shortcodes/plugin-stats.php:10
+msgid "# Downloads"
+msgstr ""
+
+#: html_includes/shortcodes/plugin-stats.php:13
+msgid "# Ratings"
+msgstr ""
+
+#: html_includes/shortcodes/plugin-stats.php:16
+msgid "Rating"
+msgstr ""
+
+#: lifterlms/course/complete-lesson-link.php:31
+msgid "You've already completed this quiz."
+msgstr ""
+
+#: lifterlms/course/complete-lesson-link.php:34
+msgid "You've already completed this lesson."
+msgstr ""
+
+#: lifterlms/course/complete-lesson-link.php:59
+msgid "Take quiz"
+msgstr ""
+
+#: lifterlms/course/complete-lesson-link.php:62
+msgid "Re-take quiz"
+msgstr ""
+
+#: lifterlms/course/lesson-navigation.php:20
+msgid "Back to course overview"
+msgstr ""
+
+#: lifterlms/course/lesson-navigation.php:25
+msgid "Previous lesson"
+msgstr ""
+
+#: lifterlms/course/lesson-navigation.php:31
+msgid "Next lesson"
+msgstr ""
+
+#: lifterlms/quiz/passing-percent.php:16
+msgid ""
+"A score of <span class=\"llms-content llms-pass-perc\">%s%%</span> is "
+"required to pass this test."
+msgstr ""
+
+#: lifterlms/quiz/passing-percent.php:18
+msgid ""
+"A score of <span class=\"llms-content llms-pass-perc\">%s%%</span> or more "
+"is required to pass this test."
+msgstr ""
+
+#: lifterlms/single-no-access.php:19
+msgid "Restricted page"
+msgstr ""
+
+#: page-template-academy.php:39 single.php:68
+msgid "Check out our Must Read Articles"
+msgstr "Bekijk onze Must Read artikelen"
+
+#: page-template-academy.php:46
+msgid "Read the latests posts on our SEO blog"
+msgstr "Lees de laatste berichten op ons blog"
+
+#: page-template-front-page.php:25
+msgid "WordPress plugins by Yoast"
+msgstr ""
+
+#: page-template-front-page.php:54
+msgid ""
+"Yoast is all about improving the web. We make websites work!  You can learn "
+"how to optimize your website yourself in our Academy &raquo;"
+msgstr ""
+
+#: page-template-front-page.php:62
+msgid "Browse our SEO Blog &raquo;"
+msgstr "Bekijk ons blog &raquo;"
+
+#: php/class-banner.php:23
+msgid "Reviews"
+msgstr "Reviews"
+
+#. Template Name of the plugin/theme
+msgid "Academy"
+msgstr "Academy"
+
+#. Template Name of the plugin/theme
+msgid "Software"
+msgstr "Software"
+
+#: php/class-checkout.php:123
+msgid "VAT number incorrect."
+msgstr ""
+
+#: php/class-checkout.php:125
+msgid "VAT number check not available."
+msgstr ""
+
+#: php/class-color-scheme.php:79
+msgid "Select color"
+msgstr "Kies kleur"
+
+#: php/class-color-scheme.php:84
+msgid "Color scheme"
+msgstr "Color scheme"
+
+#: php/class-color-scheme.php:87
+msgid "Inherit"
+msgstr ""
+
+#: php/class-color-scheme.php:89
+msgid "Academy (Purple)"
+msgstr ""
+
+#: php/class-color-scheme.php:90
+msgid "Software (Blue)"
+msgstr ""
+
+#: php/class-color-scheme.php:91
+msgid "Review (Green)"
+msgstr ""
+
+#: php/class-color-scheme.php:92
+msgid "About (Pink)"
+msgstr ""
+
+#: php/class-comment-walker.php:34
+msgid "By&nbsp;<cite class=\"fn\">%s</cite> <span class=\"date\">on %s</span>"
+msgstr "Door&nbsp;<cite class=“fn”>%s</cite> <span class=“date”>op %s</span>"
+
+#: php/class-comment-walker.php:43
+msgid "Your comment is awaiting moderation."
+msgstr "Je reactie moet nog goedgekeurd worden."
+
+#: php/class-page-academy-settings.php:23
+msgid "Page Academy Settings"
+msgstr ""
+
+#: php/class-page-academy-settings.php:32
+msgid "Left"
+msgstr ""
+
+#: php/class-page-academy-settings.php:37
+msgid "Middle"
+msgstr ""
+
+#: php/class-page-academy-settings.php:42
+msgid "Right"
+msgstr ""
+
+#: php/class-page-academy-settings.php:47
+msgid "Bottom"
+msgstr ""
+
+#: php/class-page-academy-settings.php:52
+msgid "Announcement Banner Text"
+msgstr ""
+
+#: php/class-page-academy-settings.php:58
+msgid "Announcement Banner Link"
+msgstr ""
+
+#: php/class-page-academy-settings.php:64
+msgid "Announcement Banner Image"
+msgstr ""
+
+#: php/class-page-academy-settings.php:78
+msgid "block title"
+msgstr ""
+
+#: php/class-page-academy-settings.php:84
+msgid "block description"
+msgstr ""
+
+#: php/class-page-academy-settings.php:90
+msgid "block link text"
+msgstr ""
+
+#: php/class-page-academy-settings.php:96
+msgid "block link"
+msgstr ""
+
+#: php/class-page-academy-settings.php:102
+msgid "block icon"
+msgstr ""
+
+#: php/class-promo-widget.php:50
+msgid "Read more"
+msgstr "Lees meer"
+
+#: php/class-promo-widget.php:88
+msgid "Title"
+msgstr ""
+
+#: php/class-promo-widget.php:89
+msgid "Link (URL)"
+msgstr ""
+
+#: php/class-promo-widget.php:90
+msgid "Text"
+msgstr ""
+
+#: php/class-promo-widget.php:91
+msgid "Link text"
+msgstr ""
+
+#: php/class-shortcodes.php:104
+msgid "Bundle plugins and save money"
+msgstr ""
+
+#: php/class-text-changes.php:46
+msgid "Blog"
+msgstr "Blog"
+
+#: php/class-text-changes.php:56
+msgid "Dev Blog"
+msgstr "Dev Blog"
+
+#: php/class-text-changes.php:60
+msgid "Search for \"%s\""
+msgstr "Zoek naar “%s”"
+
+#: php/class-theme.php:200
+msgid "Primary Navigation Menu"
+msgstr ""
+
+#: php/class-theme.php:201
+msgid "Secondary Navigation Menu"
+msgstr ""
+
+#: php/class-theme.php:210
+msgid "Footer %d"
+msgstr ""
+
+#: php/class-theme.php:223
+msgid "Homepage Promo Block %d"
+msgstr ""
+
+#: php/class-widget-color-setting.php:42
+msgid "Border color (Used in the footer)"
+msgstr ""
+
+#: php/class-widget-color-setting.php:46
+msgid "Purple"
+msgstr ""
+
+#: php/class-widget-color-setting.php:49
+msgid "Blue"
+msgstr ""
+
+#: php/class-widget-color-setting.php:52
+msgid "Green"
+msgstr ""
+
+#: php/class-widget-color-setting.php:55
+msgid "Pink"
+msgstr ""
+
+#: php/class-widget-color-setting.php:58
+msgid "Orange"
+msgstr ""
+
+#: php/functions-links.php:15
+msgid "View her other posts"
+msgstr "Bekijk haar andere posts"
+
+#: php/functions-links.php:19
+msgid "View his other posts"
+msgstr "Bekijk zijn andere posts"
+
+#: php/functions-links.php:23
+msgid "View their other posts"
+msgstr "Bekijk hun andere posts"
+
+#: php/functions-links.php:40
+msgid "%1$sView her other posts%2$s or find her on %3$s"
+msgstr "%1$sBekijk haar andere posts%2$s of vind haar op %3$s"
+
+#: php/functions-links.php:44
+msgid "%1$sView his other posts%2$s or find him on %3$s"
+msgstr "%1$sBekijk zijn andere posts%2$s of vind hem op %3$s"
+
+#: php/functions-links.php:48
+msgid "%1$sView their other posts%2$s or find them on %3$s"
+msgstr ""
+
+#: single-yoast_courses.php:72 single.php:41
+msgid "You might also like"
+msgstr "Andere interessante posts"
+
+#: single.php:53
+msgid "%d Response"
+msgid_plural "%d Responses"
+msgstr[0] "%d Reactie"
+msgstr[1] "%d Reacties"
+
+#. Theme Name of the plugin/theme
+msgid "Yoast.com V5"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "The Yoast.com theme, HTML & CSS build by Frozen Rockets BV"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Frozen Rockets BV & Team Yoast"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "About Author"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "About team member"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Single category"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Elements"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Full Width"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Courses"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Home"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Review"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "SEO Review"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Single plugin"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "WP Seo plugin"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Article"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Styleguide"
+msgstr ""
+
+#~ msgid "Category:"
+#~ msgid_plural "Categories:"
+#~ msgstr[0] "Categorie:"
+#~ msgstr[1] "Categorieën:"

@@ -1,0 +1,183 @@
+.color {
+
+	&-academy {
+		color: $scheme-academy-primary !important;
+	}
+
+	&-academy--secondary {
+		color: $scheme-academy-secondary !important;
+	}
+
+	&-academy--tertiary {
+		color: $scheme-academy-tertiary !important;
+	}
+
+	&-software {
+		color: $scheme-software-primary !important;
+	}
+
+	&-software--secondary {
+		color: $scheme-software-secondary !important;
+	}
+
+	&-review {
+		color: $scheme-review-primary !important;
+	}
+
+	&-review--secondary {
+		color: $scheme-review-secondary !important;
+	}
+
+	&-about {
+		color: $scheme-about-primary !important;
+	}
+
+	&-about--secondary {
+		color: $scheme-about-secondary !important;
+	}
+
+	&-about--tertiary {
+		color: $scheme-about-tertiary !important;
+	}
+
+	&-cta {
+		color: $color-orange !important;
+	}
+
+	&-white {
+		color: $color-white !important;
+	}
+
+	&-black {
+		color: $color-black !important;
+	}
+}
+
+.border-color {
+
+	&-academy {
+		border-color: $scheme-academy-primary !important;
+	}
+
+	&-academy--secondary {
+		border-color: $scheme-academy-secondary !important;
+	}
+
+	&-academy--tertiary {
+		border-color: $scheme-academy-tertiary !important;
+	}
+
+	&-software {
+		border-color: $scheme-software-primary !important;
+	}
+
+	&-software--secondary {
+		border-color: $scheme-software-secondary !important;
+	}
+
+	&-review {
+		border-color: $scheme-review-primary !important;
+	}
+
+	&-review--secondary {
+		border-color: $scheme-review-secondary !important;
+	}
+
+	&-about {
+		border-color: $scheme-about-primary !important;
+	}
+
+	&-about--secondary {
+		border-color: $scheme-about-secondary !important;
+	}
+
+	&-about--tertiary {
+		border-color: $scheme-about-tertiary !important;
+	}
+
+	&-cta {
+		border-color: $color-orange !important;
+	}
+
+	&-white {
+		border-color: $color-white !important;
+	}
+}
+
+a, button, input {
+	&.color {
+
+		&-academy {
+			&:hover, &:focus {
+				color: $scheme-academy-secondary!important;
+			}
+		}
+
+		&-academy--secondary {
+			&:hover, &:focus {
+				color: $scheme-academy-primary!important;
+			}
+		}
+
+
+		&-academy--tertiary {
+			&:hover, &:focus {
+				color: $scheme-academy-primary!important;
+			}
+		}
+
+		&-software {
+			&:hover, &:focus {
+				color: $scheme-software-secondary!important;
+			}
+		}
+
+		&-software--secondary {
+			&:hover, &:focus {
+				color: $scheme-software-primary!important;
+			}
+		}
+
+		&-review {
+			&:hover, &:focus {
+				color: $scheme-review-secondary!important;
+			}
+		}
+
+		&-review--secondary {
+			&:hover, &:focus {
+				color: $scheme-review-primary!important;
+			}
+		}
+
+		&-about {
+			&:hover, &:focus {
+				color: $scheme-about-secondary!important;
+			}
+		}
+
+		&-about--secondary {
+			&:hover, &:focus {
+				color: $scheme-about-primary!important;
+			}
+		}
+
+		&-about--tertiary {
+			&:hover, &:focus {
+				color: $scheme-about-primary!important;
+			}
+		}
+
+		&-cta {
+			&:hover, &:focus {
+				//color: desaturate(lighten($color-orange, 20), 20)!important;
+			}
+		}
+
+		&-white {
+			&:hover, &:focus {
+				color: desaturate(lighten($color-white, 20), 20)!important;
+			}
+		}
+	}
+}
